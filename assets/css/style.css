@@ -5,4 +5,33 @@
     
 .gem {
     border: 10px solid #bea348;
+    box-shadow: 0 8px 16px 0 #bea348, 0 6px 20px 0 #bea348;
+}
+
+.gem:hover{
+    border: 10px solid #fcb805;
+}
+
+.gem:active {
+    border: 10px solid #fcb805;
+    box-shadow: 0 8px 16px 0 #fcb805, 0 6px 20px 0 #fcb805;
+    transform: translateY(6px);
+}
+
+#instructions {
+    border: 5px solid #bea348;
+    width: 95%;
+    padding: 20px;
+}
+
+#scores {
+    color: #fcb805;
+    border: 5px solid #bea348;
+    width: 95%;
+    padding: 20px;
+    
+}
+
+h3 {
+    color: #fcb805;
 }
