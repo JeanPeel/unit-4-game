@@ -1,37 +1,39 @@
-var wins = document.getElementById('wins');
-var losses = document.getElementById('losses');
-var goalValue = document.getElementById('goal-value');
-var collectedValue = document.getElementById('collected-value');
-var purpleCircle = document.getElementById('purple-circle');
-var blueOval = document.getElementById('blue-oval');
-var pinkDiamond = document.getElementById('pink-diamond');
-var greenHeart = document.getElementById('green-heart');
-var gems = document.getElementsByClassName('gem')
+var winsTxt = document.getElementById('wins');
+var lossesTxt = document.getElementById('losses');
+var goalValueTxt = document.getElementById('goal-value');
+var collectedValueTxt = document.getElementById('collected-value');
+var purpleCircleClk = document.getElementById('purple-circle');
+var blueOvalClk= document.getElementById('blue-oval');
+var pinkDiamondClk = document.getElementById('pink-diamond');
+var greenHeartClk = document.getElementById('green-heart');
+var gemsLd = document.getElementsByClassName('gem');
+// var restartClk = document.getElementById('restart');
+var submitClk = document.getElementById('submit');
 
-var randomNumber3 = Math.floor(Math.random() * 3)
-var randomNumber2 = Math.floor(Math.random() * 2)
+var wins = 0;
+var losses = 0;
+var goalValue = 0;
+var collectedValue =0;
 
-$(randomNumber3).load()
-$(randomNumber2).load()
+var randomNumber1 = Math.floor(Math.random() * 11 + 1);
+var randomNumber2 = Math.floor(Math.random() * 11 + 1);
+var randomNumber3 = Math.floor(Math.random() * 11 + 1);
+var randomNumber4 = Math.floor(Math.random() * 11 + 1);
 
-console.log (randomNumber3);
-console.log (randomNumber2);
-
-var confirmLost = alert("You Loose! Do you want to reset the game?");
-        confirmLost
-
-// $(goalValue).load(randomNumber3);
-
-//     if (randomNumber3 > 19) {
-//         randomNumber3
-//     }
+var randomNumber5 = Math.floor(Math.random() * 119 + 1);
 
 
-// $(gems).load(randomNumber2);
+window.onload = function (){
 
-// if (randomNumber2 <12) {
-//     randomNumber2
-// }
+        console.log('Purple Circle ' + randomNumber1);
+        console.log('Blue Oval ' + randomNumber2);
+        console.log('Pink Diamond ' + randomNumber3);
+        console.log('Green Heart ' + randomNumber4);
 
-// console.log (randomNumber3);
-// console.log (randomNumber 2);
+        console.log('Goal Value ' + randomNumber5);
+
+};
+
+$('#restart').on('click', function() {
+        console.log('restart clicked');
+});

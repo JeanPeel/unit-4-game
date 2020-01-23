@@ -44,19 +44,22 @@ h3 {
     width: 1000px;
 }
 
-#clear {
+#restart {
     border: 1px solid #fcb805;
     box-shadow: 0 8px 16px 0 #fcb805, 0 6px 20px 0 #fcb805;
     background-color: #fcb805;
-    padding: 75px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px; 
     color: white;
+    
 }
 
-#clear:hover{
+#restart:hover{
     background-color:  #bea348;
 }
 
-#clear:active {
+#restart:active {
     border: 10px solid #bea348;
     box-shadow: 0 8px 16px 0 #bea348, 0 6px 20px 0 #fcb805;
     transform: translateY(6px);
@@ -66,8 +69,11 @@ h3 {
     border: 1px solid #fcb805;
     box-shadow: 0 8px 16px 0 #fcb805, 0 6px 20px #fcb805;
     background-color: #fcb805;
-    padding: 60px;
+    padding-left: 60px;
+    padding-right: 60px; 
+    padding-top: 30px;
     color: white;
+    
 }
 
 #submit:hover{
