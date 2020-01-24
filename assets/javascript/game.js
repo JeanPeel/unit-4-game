@@ -23,7 +23,7 @@ var randomNumber4 = Math.floor(Math.random() * 11 + 1);
 var randomNumber5 = Math.floor(Math.random() * 119 + 1);
 
 
-window.onload = function (){
+
 
         console.log('Purple Circle ' + randomNumber1);
         console.log('Blue Oval ' + randomNumber2);
@@ -32,8 +32,18 @@ window.onload = function (){
 
         console.log('Goal Value ' + randomNumber5);
 
-};
+        document.getElementById('blue-oval').addEventListener('click',function(){
+                console.log('Blue Oval has been clicked!')
+        });
 
-$('#restart').on('click', function() {
-        console.log('restart clicked');
+
+$('#restart').click(function(){
+        console.log('Restart has been clicked!')
 });
+
+// $('#blue-oval').on('click',function(){
+//         console.log('Blue Oval has been clicked!')
+// });
+
+
+

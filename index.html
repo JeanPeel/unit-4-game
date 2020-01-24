@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="game" href="assets/javascript/game.js">
    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
-    
+   
+
     <title>Document</title>
 </head>
+
 <body>
-    <div class='row col-md-12 d-flex justify-content-center' >
+    <div class='row col-md-12 d-flex justify-content-center'>
 
         <div class='col-md-3'>
             <a herf='assets/images/purple-circle-6j.jpg'>
-                <img src="assets/images/cool-txt-gem.jpg" alt="G" class='img-thumbnail' >
+                <img src="assets/images/cool-txt-gem.jpg" alt="G" class='img-thumbnail'>
             </a>
         </div>
 
@@ -29,9 +32,9 @@
 
     </div>
 
-    <div class='row col-md-12 d-flex justify-content-center' >
-        <div class='row col-md-6 d-flex justify-content-center' >
-            <div id='instructions'  >
+    <div class='row col-md-12 d-flex justify-content-center'>
+        <div class='row col-md-6 d-flex justify-content-center'>
+            <div id='instructions'>
                 <ul>
                     <h3><b>Instructions</b></h3>
 
@@ -42,72 +45,75 @@
                     <li>Each of the four gems below will be assigned a random gem value.</li>
 
                     <li>The gems values, and the goal value changes to random numbers every round.</li>
-                    
+
                     <li>How much value can you collect in total?</li>
 
                 </ul>
             </div>
         </div>
-        <div class='col-md-4 d-flex justify-content-center' > 
-            <div id='scores' >
+        <div class='col-md-4 d-flex justify-content-center'>
+            <div id='scores'>
                 <h4><b>Goal Value:</b></h4>
-                    <p id='goal-value'></p>
-                
-                    <h4><b>Collected Value:</b></h2>
+                <p id='goal-value'></p>
+
+                <h4><b>Collected Value:</b></h2>
                     <p id='collected-value'></p>
 
                     <h4><b>Wins:</b></h3>
-                    <p id='wins'></p>
-                
-                    <h4><b>Losses:</b></h4>
-                    <p id='losses'></p>
+                        <p id='wins'></p>
+
+                        <h4><b>Losses:</b></h4>
+                        <p id='losses'></p>
             </div>
         </div>
-        <div class='col-md-2 d-flex justify-content-center' id='boxer' >
-            <div class='row col-md-2 d-flex justify-content-center' id='boxer'> 
-                <div id='restart' class='game-btn' >
+        <div class='col-md-2 d-flex justify-content-center' id='boxer'>
+            <div class='row col-md-2 d-flex justify-content-center' id='boxer'>
+                <div id='restart' class='game-btn'>
                     <h2><b>Restart</b></h2>
                 </div>
                 <br>
-                <div id='submit'class='game-btn'>
+                <div id='submit' class='game-btn'>
                     <h2><b>Submit</b></h2>
                 </div>
             </div>
         </div>
     </div>
-             
-             
-            <br>
-        
 
-            <div class='row col-md-12 d-flex justify-content-center' >
 
-                <div class='col-md-3' id='purple-circle' >
-                    <a herf='assets/images/purple-circle-6j.jpg'>
-                        <img src="assets/images/purple-circle-6j.jpg" alt="purple circle" class='img-thumbnail gem' >
-                </div>
+    <br>
 
-                <div class='col-md-3'id='blue-oval' >
-                    <a herf='assets/images/blue-oval-6j.jpg'>
-                        <img src="assets/images/blue-oval-6j.jpg" alt="blue oval" class='img-thumbnail gem' >
-                    </a>
-                </div>
 
-                <div class='col-md-3'id='pink-diamond' >
-                    <a herf='assets/images/pink-diamond-6j.jpg'>
-                        <img src="assets/images/pink-diamond-6j.jpg" alt="pink diamond" class='img-thumbnail gem' >
-                    </a>
-                </div>
+    <div class='row col-md-12 d-flex justify-content-center'>
 
-                <div class='col-md-3'id='green-heart' >
-                    <a herf='assets/images/green-heart-6j.jpg'>
-                        <img src="assets/images/green-heart-6j.jpg" alt="green heart" class='img-thumbnail gem' >
-                    </a>
-                </div>
-
-            </div>
-
+        <div class='col-md-3' id='purple-circle'>
+            <a herf='assets/images/purple-circle-6j.jpg'>
+                <img src="assets/images/purple-circle-6j.jpg" alt="purple circle" class='img-thumbnail gem'>
         </div>
+
+        <div class='col-md-3' id='blue-oval'>
+            <a herf='assets/images/blue-oval-6j.jpg'>
+                <img src="assets/images/blue-oval-6j.jpg" alt="blue oval" class='img-thumbnail gem'>
+            </a>
+        </div>
+
+        <div class='col-md-3' id='pink-diamond'>
+            <a herf='assets/images/pink-diamond-6j.jpg'>
+                <img src="assets/images/pink-diamond-6j.jpg" alt="pink diamond" class='img-thumbnail gem'>
+            </a>
+        </div>
+
+        <div class='col-md-3' id='green-heart'>
+            <a herf='assets/images/green-heart-6j.jpg'>
+                <img src="assets/images/green-heart-6j.jpg" alt="green heart" class='img-thumbnail gem'>
+            </a>
+        </div>
+
     </div>
+
+    </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
