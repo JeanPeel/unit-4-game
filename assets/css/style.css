@@ -65,7 +65,7 @@ h3 {
     transform: translateY(6px);
 }
 
-#submit {
+#collect {
     border: 1px solid #fcb805;
     box-shadow: 0 8px 16px 0 #fcb805, 0 6px 20px #fcb805;
     background-color: #fcb805;
@@ -76,11 +76,11 @@ h3 {
     
 }
 
-#submit:hover{
+#collect:hover{
     background-color:  #bea348;
 }
 
-#submit:active {
+#collect:active {
     border: 10px solid #bea348;
     box-shadow: 0 8px 16px 0 #bea348, 0 6px 20px 0 #fcb805;
     transform: translateY(6px);
