@@ -2,13 +2,6 @@ var winsTxt = document.getElementById('wins');
 var lossesTxt = document.getElementById('losses');
 var goalValueTxt = document.getElementById('goal-value');
 var collectedValueTxt = document.getElementById('collected-value');
-var purpleCircleClk = document.getElementById('purple-circle');
-var blueOvalClk= document.getElementById('blue-oval');
-var pinkDiamondClk = document.getElementById('pink-diamond');
-var greenHeartClk = document.getElementById('green-heart');
-var gemsLd = document.getElementsByClassName('gem');
-var restartClk = document.getElementById('restart');
-var collectClk = document.getElementById('collect');
 
 var wins = 0;
 var losses = 0;
@@ -86,7 +79,16 @@ function collectScores() {
 }
 
 
+$('#purple-circle').click(function(){
+        console.log('Purple has been clicked!')
+        // purpleClick()
+});
 
+// function purpleClick() {
+//         $(collectedValueTxt).text(totalCollected1)
+        
+//         var totalCollected1 = (collectedValue + randomNumber1);
+// }
 
 
 
