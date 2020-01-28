@@ -1,3 +1,5 @@
+//Gem Collector
+
 var winsTxt = document.getElementById('wins');
 var lossesTxt = document.getElementById('losses');
 var goalValueTxt = document.getElementById('goal-value');
@@ -6,7 +8,7 @@ var collectedValueTxt = document.getElementById('collected-value');
 var wins = 0;
 var losses = 0;
 var goalValue = 0;
-var collectedValue =0;
+var collectedValue =1;
 
 var randomNumber1 = Math.ceil(Math.random() * 12);
 var randomNumber2 = Math.ceil(Math.random() * 12);
@@ -22,9 +24,7 @@ var randomNumber5 = Math.floor(Math.random() * 101)+20;
 
         console.log('Goal Value ' + randomNumber5);
 
-        document.getElementById('blue-oval').addEventListener('click',function(){
-        console.log('Blue Oval has been clicked!')
-        });
+      
 
 
 $('#restart').click(function(){
@@ -50,7 +50,7 @@ function restartGame() {
         var wins = 0;
         var losses = 0;
         var goalValue = 0;
-        var collectedValue =0;
+        var collectedValue =1;
 
         console.log("Scores Reset!")
 }
@@ -81,14 +81,51 @@ function collectScores() {
 
 $('#purple-circle').click(function(){
         console.log('Purple has been clicked!')
-        // purpleClick()
+        purpleClick()
 });
 
-// function purpleClick() {
-//         $(collectedValueTxt).text(totalCollected1)
+$('#blue-oval').click(function(){
+        console.log('Blue has been clicked!')
+        blueClick()
+});
+
+$('#pink-diamond').click(function(){
+        console.log('Pink has been clicked!')
+        pinkClick()
+});
+
+$('#green-heart').click(function(){
+        console.log('Green has been clicked!')
+        greenClick()
+});
+
+function purpleClick() {
+        // $(collectedValueTxt).text(totalCollected1)
         
-//         var totalCollected1 = (collectedValue + randomNumber1);
-// }
+        var totalCollected1 = (collectedValue + randomNumber1);
+        console.log(totalCollected1)
+}
+
+function blueClick() {
+        // $(collectedValueTxt).text(totalCollected1)
+        
+        var totalCollected2 = (collectedValue + randomNumber2);
+        console.log(totalCollected2)
+}
+
+function pinkClick() {
+        // $(collectedValueTxt).text(totalCollected1)
+        
+        var totalCollected3 = (collectedValue + randomNumber3);
+        console.log(totalCollected3)
+}
+
+function greenClick() {
+        // $(collectedValueTxt).text(totalCollected1)
+        
+        var totalCollected4 = (collectedValue + randomNumber4);
+        console.log(totalCollected4)
+}
 
 
 
