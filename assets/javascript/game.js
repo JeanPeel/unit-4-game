@@ -82,6 +82,7 @@ function collectScores() {
 $('#purple-circle').click(function(){
         console.log('Purple has been clicked!')
         purpleClick()
+        purpleScore()
 });
 
 $('#blue-oval').click(function(){
@@ -100,31 +101,37 @@ $('#green-heart').click(function(){
 });
 
 function purpleClick() {
-        // $(collectedValueTxt).text(totalCollected1)
+        var totalCollected = (collectedValue + randomNumber1);
+        console.log(totalCollected) 
+        $(collectedValueTxt).text(totalCollected)
         
-        var totalCollected1 = (collectedValue + randomNumber1);
-        console.log(totalCollected1)
+        
+            
 }
+
+
+
 
 function blueClick() {
         // $(collectedValueTxt).text(totalCollected1)
         
-        var totalCollected2 = (collectedValue + randomNumber2);
-        console.log(totalCollected2)
+        // var totalCollected = (collectedValue + randomNumber2);
+        // console.log(totalCollected)
+        var totalCollected1=()
 }
 
 function pinkClick() {
         // $(collectedValueTxt).text(totalCollected1)
         
-        var totalCollected3 = (collectedValue + randomNumber3);
-        console.log(totalCollected3)
+        var totalCollected = (collectedValue + randomNumber3);
+        console.log(totalCollected)
 }
 
 function greenClick() {
         // $(collectedValueTxt).text(totalCollected1)
         
-        var totalCollected4 = (collectedValue + randomNumber4);
-        console.log(totalCollected4)
+        var totalCollected = (collectedValue + randomNumber4);
+        console.log(totalCollected)
 }
 
 
