@@ -30,7 +30,7 @@ I had fun working on this project.  I started with logic I understood and worked
 
 ## Authors
 
-* **Jean Peel** - *React Application Building* - [JeanPeel](https://github.com/JeanPeel)
+* **Jean Peel** - *Application Building* - [JeanPeel](https://github.com/JeanPeel)
 
 ## Acknowledgments
 
